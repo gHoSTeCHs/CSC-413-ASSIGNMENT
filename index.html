@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+		<script
+			src="https://kit.fontawesome.com/54c068ba68.js"
+			crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<nav class="nav">
+			<div class="container">
+				<div class="navbar">
+					<div class="logo">
+						<img
+							class="logoImg"
+							src="./Images/LogoSample_ByTailorBrands.jpg"
+							alt="" />
+					</div>
+					<i class="fa-solid fa-bars" id="icon"></i>
+					<div class="menuLinks">
+						<i class="fa-solid fa-xmark" id="icon"></i>
+						<ul>
+							<a href="#" class="hre"><li>Home</li></a>
+							<a href="#" class="hre"><li>About</li></a>
+							<a href="#" class="hre"><li>Contact</li></a>
+							<a href="#" class="hre"><li>News</li></a>
+							<a href="#" class="hre"><li>Learn More</li></a>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<section class="introSec">
+			<div class="container">
+				<div class="text">
+					<div>
+						<h1 class="welcome">Welcome <span class="username"></span></h1>
+					</div>
+					<div class="">
+						<h2>
+							Have you always had difficulty determining when your next period
+							or cycle starts?. Well look no further because here at FLOWSCYCLE,
+							we’ve got you covered.
+						</h2>
+					</div>
+					<div class="works">
+						<h2>How does it work?</h2>
+					</div>
+				</div>
+				<div class="sectionImg">
+					<img src="" alt="" class="secImg" />
+				</div>
+			</div>
+		</section>
+		<section class="modal">
+			<div class="container">
+				<div class="modalBox">
+					<div class="modal-content">
+						<span class="close">&times;</span>
+						<p>Some text in the Modal..</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<aside class="aside">
+			<div class="container">
+				<form action="" class="form">
+					<div class="formContent">
+						<div>
+							<label for="date">When was your last period?</label><br />
+							<input type="datetime-local" name="date" id="dateTime" />
+						</div>
+						<div>
+							<label for="noDays">How many did days it last?</label><br />
+							<input type="number" name="noDays" id="Days" />
+						</div>
+						<div>
+							<label for="cycle">How long is your cycle?</label><br />
+							<input type="number" name="cycle" id="cycles" />
+						</div>
+					</div>
+
+					<button type="submit" id="submit">Calculate</button>
+				</form>
+			</div>
+		</aside>
+		<aside class="output">
+			<div class="container">
+				<div class="startperd period">
+					<h2>Your next period should start on :</h2>
+					<h4 class="periodStart"></h4>
+				</div>
+				<div class="startOvu period">
+					<h2>Your Ovulation / Fertile period :</h2>
+					<h4 class="ovuStart"></h4>
+				</div>
+			</div>
+		</aside>
+
+		<footer class="footer">
+			<div class="container">
+				<div>
+					<img
+						class="footerImg"
+						src="./Images/LogoSample_ByTailorBrands-removebg-preview.png"
+						alt="" />
+				</div>
+				<div class="footerLinks">
+					<ul>
+						<a href="#" class="hre"><li>Home</li></a>
+						<a href="#" class="hre"><li>About</li></a>
+						<a href="#" class="hre"><li>Contact</li></a>
+						<a href="#" class="hre"><li>News</li></a>
+						<a href="#" class="hre"><li>Learn More</li></a>
+					</ul>
+				</div>
+				<div class="footerSocials">
+					<i class="fa-brands fa-square-facebook foot fa-2x"></i>
+					<i class="fa-brands fa-square-instagram foot fa-2x"></i>
+					<i class="fa-brands fa-square-twitter foot fa-2x"></i>
+				</div>
+				<div class="footerTop">
+					<p>Back to top</p>
+					<i class="fa-solid fa-arrow-up-from-bracket fa-1x"></i>
+				</div>
+			</div>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>

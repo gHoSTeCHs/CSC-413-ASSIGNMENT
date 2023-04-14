@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Ubuntu:wght@500;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+	max-width: 1220px;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+/* NAVBAR SYLING */
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 2.5vh;
+}
+
+/*NAV LINKS*/
+.menuLinks ul {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+li {
+	list-style: none;
+	font-size: 2vw;
+	font-weight: 700;
+	color: black;
+	text-transform: uppercase;
+}
+
+.menuLinks ul li:hover {
+	border-bottom: 5px solid red;
+	border-radius: 5px;
+	padding-bottom: 5px;
+}
+
+a {
+	text-decoration: none;
+}
+
+#icon {
+	display: none;
+}
+
+.logoImg {
+	width: 100px;
+	height: 100px;
+}
+
+/*INTRO SECTION*/
+.introSec .container {
+	display: flex;
+	justify-content: center;
+}
+
+.secImg {
+	max-width: 100%;
+}
+
+.welcome {
+	font-size: 64px;
+}
+.username {
+	font-family: 'Courgette', cursive;
+}
+
+/*Modal Content*/
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/*FORM CONTENT*/
+.form {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 30px;
+	flex-direction: column;
+}
+.formContent {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 20px;
+	max-width: 1000px;
+	margin: auto;
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+button {
+	font-family: 'Ubuntu', sans-serif;
+	background-color: red;
+	color: white;
+	padding: 10px;
+	border: none;
+	border-radius: 3px;
+	width: 200px;
+}
+
+input {
+	margin-top: 10px;
+	max-width: 100vw;
+	/* padding: 10px; */
+	border: 2px solid black;
+	border-radius: 5px;
+	color: red;
+	padding: 7px;
+	font-weight: 700;
+}
+
+/*Period*/
+.period {
+	margin-bottom: 50px;
+}
+
+/*FOOTER*/
+.footer .container {
+	background-color: #d9d9d9;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footerSocials {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	gap: 7px;
+}
+
+.footerTop {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.footerImg {
+	width: 100px;
+	height: 100px;
+}
+
+.fa-brands {
+	background-color: black;
+	color: red;
+}
