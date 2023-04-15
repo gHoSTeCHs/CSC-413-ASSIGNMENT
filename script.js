@@ -7,8 +7,8 @@ const cycle = document.getElementById('cycles');
 const inner1 = document.querySelector('.periodStart');
 const inner2 = document.querySelector('.ovuStart');
 
-// const names = prompt('Please enter your name');
-// user.textContent = names;
+const names = prompt('Please enter your name');
+user.textContent = names;
 
 form.addEventListener('submit', (e) => {
 	e.preventDefault();
