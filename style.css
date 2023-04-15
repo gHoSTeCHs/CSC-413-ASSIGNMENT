@@ -22,6 +22,7 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	margin-bottom: 2.5vh;
+	margin-top: 0.5vh;
 }
 
 /*NAV LINKS*/
@@ -73,6 +74,11 @@ a {
 }
 .username {
 	font-family: 'Courgette', cursive;
+}
+
+.details h2 {
+	margin-bottom: 2vh;
+	letter-spacing: 0.1rem;
 }
 
 /*Modal Content*/
@@ -146,6 +152,7 @@ input {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 10px;
 }
 
 .footerSocials {
@@ -169,4 +176,20 @@ input {
 .fa-brands {
 	background-color: black;
 	color: red;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 480px) {
+	.welcome {
+		font-size: 10vw;
+	}
+	.details h2 {
+		font-size: 20px;
+	}
+	.menuLinks ul {
+		gap: 10px;
+	}
+	li {
+		font-size: 1.2vh;
+	}
 }
