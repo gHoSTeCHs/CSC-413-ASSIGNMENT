@@ -13,7 +13,7 @@ body {
 .container {
 	max-width: 1220px;
 	margin: 0 auto;
-	padding: 0 30px;
+	padding: 0 25px;
 }
 
 /* NAVBAR SYLING */
@@ -21,8 +21,10 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin-bottom: 2.5vh;
-	margin-top: 0.5vh;
+}
+
+.nav.container {
+	padding: 0;
 }
 
 /*NAV LINKS*/
@@ -34,7 +36,7 @@ body {
 
 li {
 	list-style: none;
-	font-size: 2vw;
+	font-size: 1.5vw;
 	font-weight: 700;
 	color: black;
 	text-transform: uppercase;
@@ -63,6 +65,7 @@ a {
 .introSec .container {
 	display: flex;
 	justify-content: center;
+	padding-top: 0;
 }
 
 .secImg {
@@ -77,23 +80,11 @@ a {
 }
 
 .details h2 {
-	margin-bottom: 2vh;
+	/* margin-bottom: 1.5vh; */
 	letter-spacing: 0.1rem;
 }
 
 /*Modal Content*/
-.modal {
-	display: none; /* Hidden by default */
-	position: fixed; /* Stay in place */
-	z-index: 1; /* Sit on top */
-	left: 0;
-	top: 0;
-	width: 100%; /* Full width */
-	height: 100%; /* Full height */
-	overflow: auto; /* Enable scroll if needed */
-	background-color: rgb(0, 0, 0); /* Fallback color */
-	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-}
 
 /*FORM CONTENT*/
 .form {
@@ -108,6 +99,7 @@ a {
 	font-size: 20px;
 	max-width: 1000px;
 	margin: auto;
+	margin-top: 30px;
 	display: flex;
 	gap: 20px;
 	flex-wrap: wrap;
@@ -126,8 +118,9 @@ button {
 	color: white;
 	padding: 10px;
 	border: none;
-	border-radius: 3px;
+	border-radius: 5px;
 	width: 200px;
+	margin-bottom: 40px;
 }
 
 input {
@@ -147,6 +140,10 @@ input {
 }
 
 /*FOOTER*/
+footer {
+	margin-top: 50px;
+}
+
 .footer .container {
 	background-color: #d9d9d9;
 	display: flex;
@@ -164,7 +161,7 @@ input {
 
 .footerTop {
 	display: flex;
-	align-items: center;
+	justify-content: center;
 	gap: 5px;
 }
 
@@ -178,8 +175,53 @@ input {
 	color: red;
 }
 
+/*About*/
+.return {
+	color: white;
+	background-color: red;
+	border: 1px solid red;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.return:hover {
+	background-color: rgba(214, 26, 26, 0.877);
+}
+
+/*Contact*/
+textarea {
+	margin-top: 10px;
+	border: 2px solid black;
+	border-radius: 7px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 20px;
+}
+
+.btn {
+	margin-top: 30px;
+	width: 150px;
+}
+
+/*Learn More*/
+p {
+	margin-bottom: 24px;
+}
+
+.ovulationStage {
+	margin-bottom: 20px;
+	color: red;
+	text-transform: uppercase;
+}
+
+.mens {
+	color: rgb(192, 79, 79);
+	margin: 0;
+	list-style: disc;
+	text-transform: none;
+	font-size: 13px;
+}
 /*Media Queries*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
 	.welcome {
 		font-size: 10vw;
 	}
@@ -191,5 +233,9 @@ input {
 	}
 	li {
 		font-size: 1.2vh;
+	}
+	.footerImg {
+		width: 70px;
+		height: 70px;
 	}
 }
